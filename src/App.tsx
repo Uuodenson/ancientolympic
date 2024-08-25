@@ -1,3 +1,5 @@
+"use-client";
+
 import { useState } from "react";
 import "./App.css";
 import { Button } from "./components/ui/button";
@@ -90,6 +92,23 @@ function Socials(): JSX.Element {
   );
 }
 
+function AboutSection(): JSX.Element {
+  return (
+    <>
+      <Card className="p-20">
+        <h2 className="text-3xl">
+          About Us
+          <p className="text-lg">
+            We are Ancient Olympic, a Minecraft Bedrock Map creator team. Maps
+            like the ones you see here are created by us. Primarily Story an
+            Minigames Maps
+          </p>
+        </h2>
+      </Card>
+    </>
+  );
+}
+
 function End(): JSX.Element {
   return (
     <>
@@ -138,6 +157,7 @@ function App(): JSX.Element {
       <Start />
       <News />
       {<Socials />}
+      <AboutSection />
       <End />
     </>
   );

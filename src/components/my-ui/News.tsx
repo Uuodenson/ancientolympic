@@ -36,7 +36,7 @@ function News() {
 
           <div className="flex flex-row justify-center mr-auto ml-auto">
             <Button
-              className="h-auto"
+              className="h-auto mr-2"
               onClick={() => {
                 if (index + 1 < news.length) setIndex(index + 1);
                 else setIndex(0);
@@ -45,17 +45,17 @@ function News() {
               +
             </Button>
             <div
-              className="w-1/2 overflow-hidden object-fill rounded-sm"
+              className="rounded-sm w-1/2 flex-justify-center items-center"
               onClick={() => (window.location.href = news[index].link)}
             >
               <img
-                className="w-full h-64"
+                className="w-fill min-h-[300px] max-h-[300px] object-none"
                 src={news[index].src}
                 alt={news[index].title}
               />
             </div>
             <Button
-              className="h-auto mr-2"
+              className="h-auto ml-2"
               onClick={() => {
                 if (index - 1 >= 0) setIndex(index - 1);
                 else setIndex(news.length - 1);
