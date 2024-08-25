@@ -1,6 +1,7 @@
+import IconArrowLeftSquareFill from "../assets/svgs/left_arrow";
+import IconThemeLightDark from "../assets/svgs/theme";
 import { Button } from "../components/ui/button";
 import { useState } from "react";
-
 const maps: { name: string; link: string }[] = [
   {
     name: "OlympicGames.mcworld(v.1.6.0)",
@@ -28,7 +29,7 @@ function DownloadSection() {
   return (
     <>
       <Button className="fixed top-10 right-10" onClick={changeScene}>
-        T
+        <IconThemeLightDark fontSize={30}></IconThemeLightDark>
       </Button>
       <Button
         className="fixed top-10 left-10"
@@ -36,7 +37,7 @@ function DownloadSection() {
           window.location.href = "/ancientolympic/";
         }}
       >
-        -
+        <IconArrowLeftSquareFill fontSize={30} />
       </Button>
       <h1 className="text-5xl mb-5">Downloads</h1>
       <div className="flex flex-col justify-center items-center">
