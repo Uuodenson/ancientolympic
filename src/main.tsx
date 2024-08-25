@@ -7,10 +7,9 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <HashRouter basename="/ancientolympic/">
+    <HashRouter>
       <Routes>
-        <Route index element={<App />} />
-        <Route path="/404" element={<NotFound />}></Route>
+        <Route index path="/" element={<App />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </HashRouter>

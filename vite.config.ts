@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 import { ghPages } from "vite-plugin-gh-pages";
 
 export default defineConfig({
-  base: "/ancientolympic/",
+  base: "/ancientolympic/#/",
   plugins: [react(), ghPages()],
   resolve: {
     alias: {
