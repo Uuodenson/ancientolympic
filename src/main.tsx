@@ -10,6 +10,7 @@ createRoot(document.getElementById("root")!).render(
     <BrowserRouter basename="/ancientolympic/">
       <Routes>
         <Route index element={<App />} />
+        <Route path="/404" element={<NotFound />}></Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
