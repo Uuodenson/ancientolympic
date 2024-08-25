@@ -31,7 +31,7 @@ function App() {
       <div id="sticky" className="hidden">
         <Button
           onClick={() => {
-            window.location.href = "/#/download";
+            window.location.href = "/ancientolympic/#/download";
           }}
         >
           Downloads

@@ -33,7 +33,7 @@ function DownloadSection() {
       <Button
         className="fixed top-10 left-10"
         onClick={() => {
-          window.location.href = "/";
+          window.location.href = "/ancientolympic/";
         }}
       >
         -
